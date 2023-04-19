@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Myform"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter name"
+
+        android:id="@+id/et_name"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter password"
+
+
+        android:id="@+id/et_pass"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="enter phone"
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_phone"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAle"
+            android:id="@+id/rb_male"
+            android:checked="true"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rb_female"
+            android:checked="false"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="transgender"
+            android:id="@+id/rb_Trans"
+            android:checked="false"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="whats your lang" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JAVA"
+        android:id="@+id/cb_java"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:clickable="true"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="python"
+        android:id="@+id/cb_python"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dart"
+        android:id="@+id/cb_Dart"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/sp_cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cities"
+        android:padding="15dp"
+        android:background="@drawable/spinnerdesign"
+        android:theme="@style/city_spinner"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getvalues"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginbtn_shape"
+        android:onClick="getAllValues"
+        android:text="Clik me"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spiner_text_size"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

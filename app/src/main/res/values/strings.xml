@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Myapp</string>
+    <string-array name="cities">
+        <item>Select cities</item>
+        <item>BAsti</item>
+        <item>GKP</item>
+        <item>KLD</item>
+        <item>GKP</item>
+        <item>LKO</item>
+    </string-array>
+
+</resources>

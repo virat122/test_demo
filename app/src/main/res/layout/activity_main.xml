@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bgcol"
+
+    >
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:text="Register"
+
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:drawableLeft="@drawable/runperson"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:background="@drawable/edtext_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:layout_height="60dp"
+        android:hint="ENTER USER NAME"
+        />
+    <EditText
+        android:padding="15dp"
+android:drawableLeft="@drawable/runperson"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edtext_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="ENTER PASSWORD"
+        android:inputType="numberPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/loginbtn_shape"
+            android:text="login "
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="55dp"
+
+            android:background="@drawable/loginbtn_shape"
+            android:fontFamily="monospace"
+            android:text="RESISTER"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

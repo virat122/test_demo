@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="city_spinner">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/spiner_text_size</item>
+
+
+    </style>
+</resources>
